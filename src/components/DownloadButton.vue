@@ -59,7 +59,7 @@
                 console.log('done', url);               
             }
 
-            function process(event) {
+            function process(event: ProgressEvent): undefined {
                 if (!event.lengthComputable) {
                     progressPersent.value = 50;
                     return;

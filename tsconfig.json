@@ -2,19 +2,19 @@
     "compilerOptions": {
         "target": "esnext",
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "strict": false,
         "jsx": "preserve",
         "importHelpers": true,
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
+        "skipLibCheck": true,
         "esModuleInterop": true,
         "sourceMap": true,
-        "baseUrl": ".",
         "types": ["vite/client", "@types/node", "@types/cheerio"],
         "paths": {
             "@/*": [
-                "src/*"
+                "./src/*"
             ]
         },
         "lib": [
